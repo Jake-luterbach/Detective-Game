@@ -1,4 +1,8 @@
-#The reuired features:
+#Basic Premise: 
+*The player moves around the map, follows the storyline, and collects evidence to figure out the mystery.
+
+
+##The required features:
 *A Map
 *A Simple Story Line 
 *Evidences
@@ -18,9 +22,10 @@
 *way to restart game, to play again
 *Images(if possible)
 
+
 ####Similar Programs:
 Oregon Trail
 
 
-##target user
- ###Someone who knows how to code, likes mystery's and games
+#####Target user:
+ *Someone who knows how to code, likes mystery's and games
