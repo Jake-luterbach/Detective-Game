@@ -1,10 +1,10 @@
-#Basic Premise: 
+## Basic Premise: 
 *The player moves around the map, follows the storyline, and collects evidence to figure out the mystery.
 
-##Project Team:
+## Project Team:
 Lee, John, Jake
 
-##The required features:
+## The required features:
 *A Map
 *A Simple Story Line
 *Evidences
@@ -17,17 +17,16 @@ Lee, John, Jake
 *When all of the clues are gathered, print all clues they have and ask for the murderer.
 *If they can guess it without all of the information clues, talk to a specific NPC.
 *Information screen where items are collected and given clues.
-
-
-##Desired features:
 *Multi-layered map/ multiple floors
+
+## Desired features:
 *way to restart game, to play again
 *Images(if possible)
 
 
-##Similar Programs:
+## Similar Programs:
 Oregon Trail
 
 
-##Target user:
- *Someone who knows how to code, likes mystery's and games
+## Target user:
+ *Anyone who enjoys mystery/suspenseful games
