@@ -10,4 +10,3 @@ class NPC:
         if self.Name == "Samantha Clarke":
             print("Hey Detective" + 
                   ", Do you have infromation about the case for the press?")
-NPC_talk = NPCS
