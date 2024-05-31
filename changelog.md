@@ -9,3 +9,7 @@
     *Updated proposal and flowchart - John
     *Added deadlines - John
     *Added detail to flowchart and made predictions to how code works- John
+    *Added upper (above-ground) map - John
+    *Added NPC Dialogue - Jake
+    *Added second map - John
+    *Added Player module and class and movement method - John

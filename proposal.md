@@ -22,7 +22,8 @@ Lee, John, Jake
 ## Desired features:
 *way to restart game, to play again
 *Images(if possible)
-
+*Multiple Dialogue options for each encounter
+*Clues can be turned on and off at the start
 
 ## Similar Programs:
 Oregon Trail
