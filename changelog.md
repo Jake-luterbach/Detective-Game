@@ -13,3 +13,8 @@
     *Added NPC Dialogue - Jake
     *Added second map - John
     *Added Player module and class and movement method - John
+    *Updated Underground Map - John
+    *Added database of items/evidences with descriptions, locations, actions, and requirements - All
+    *Added headers to modules - Lee
+    *Added descriptions to map - Lee
+    *started Evidence inspecting - jake
