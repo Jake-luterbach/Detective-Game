@@ -28,6 +28,6 @@
     *Updated player movement methods: - John
         -Movement on XY plane based on player's choice, and
         -change floors (aboveground/underground)
-    *Started player's action (take and leave)
-    *Started player's inventory
-    *Updated evidences'clues
+    *Started player's action (take and leave) - Lee
+    *Started player's inventory - Lee
+    *Updated evidences'clues - Lee
