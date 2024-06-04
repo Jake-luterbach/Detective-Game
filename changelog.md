@@ -17,4 +17,17 @@
     *Added database of items/evidences with descriptions, locations, actions, and requirements - All
     *Added headers to modules - Lee
     *Added descriptions to map - Lee
-    *started Evidence inspecting - jake
+    
+
+## Version 2.0:
+    *started Evidence inspecting - Jake
+    *continued to update evidence database and inspecting- Jake
+    *Updated underground map - John
+    *Created write and read files for maps, print maps to player - John
+    *Updated player location attribute to include (x,y,z) for floors - John
+    *Updated player movement methods: - John
+        -Movement on XY plane based on player's choice, and
+        -change floors (aboveground/underground)
+    *Started player's action (take and leave)
+    *Started player's inventory
+    *Updated evidences'clues
