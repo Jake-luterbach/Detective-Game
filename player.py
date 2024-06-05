@@ -4,31 +4,32 @@
 # Imports --------------------------------------------------------------------
 # Functions ------------------------------------------------------------------
 class Player:
-    def __init__(self, locationX, locationY, locationZ):
-        self.locationX = locationX
-        self.locationY = locationY
-        self.locationZ = locationZ
+    def __init__(self, locX, locY, locZ):
+        self.locX = locX
+        self.locY = locY
+        self.locZ = locZ
 
     
     def movement(self, choice):
         self.choice = choice
         if choice == "W":
-            self.locationY -= 1
+            self.locY -= 1
         elif choice == "S":
-            self.locationY += 1
+            self.locY += 1
         elif choice == "A":
-            self.locationX -= 1
+            self.locX -= 1
         elif choice == "D":
-            self.locationX += 1
+            self.locX += 1
 
 
     def changeFloor(self):
-        if self.locationZ == 0:
-            self.locationZ += 1
-        elif self.locationZ == 1:
-            self.locationZ -= 1
+        if self.locZ == 0:
+            self.locZ += 1
+        elif self.locZ == 1:
+            self.locZ -= 1
 
 
 playerObject = Player(0, 0, 0)
 
-playerObject.movement()
+
+playerObject.movement(choice=input("Direction you want to go is: "))
