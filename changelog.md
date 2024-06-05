@@ -22,7 +22,7 @@
 ## Version 2.0:
     *started Evidence inspecting - Jake
     *continued to update evidence database and inspecting- Jake
-    *updated inspecting - Ja
+    *updated inspecting - Jake
     *Updated underground map - John
     *Created write and read files for maps, print maps to player - John
     *Updated player location attribute to include (x,y,z) for floors - John
@@ -33,6 +33,7 @@
     *Started player's inventory - Lee
     *Updated evidences'clues - Lee
     *Added description to the map - Lee
-    *Remove 
+    *Remove actions module - Lee
+    *Changes find evidences functions - Lee
     *Refined map functions (read and write) for multiple maps - John
     *Updated all item locations - John

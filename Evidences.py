@@ -68,7 +68,7 @@ class Evidence(p.Player):
                 try:
                     if self.actions.lower() == "yes":
                         Evidences.append(item)
-                        print("You succesfully store the item")
+                        print("You succesfully stored the item")
                     if self.actions.lower() == "no":
                         print("You left the item")
                 except:
