@@ -75,7 +75,5 @@ def readMap(mapFile):
         print("Good luck, detective.")
 
 
-writeMap("townMap.txt", Ravenswood_Map)
-writeMap("undergroundMap.txt", Underground_Tunnels_Map)
-readMap("townMap.txt")
-readMap("undergroundMap.txt")
+writeMap(Ravenswood_Map, "townMap.txt", )
+writeMap(Underground_Tunnels_Map, "undergroundMap.txt")

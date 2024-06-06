@@ -20,7 +20,7 @@ class NPC:
         if self.name == "Henry Blackwood":
             print("Hello Detective, if you have any questions please do ask")
         if self.name == "Rebbeca Mercer":
-            print("Hey Alex! Have you spoken to my father yet?")
+            print("Hey Alex! Have you found my father yet?")
 
     
     def NPC_Clues(self):

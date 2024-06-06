@@ -37,3 +37,5 @@
     *Changes find evidences functions - Lee
     *Refined map functions (read and write) for multiple maps - John
     *Updated all item locations - John
+    *Add limit to the movement - John, Lee, Jake
+    *Updated evidence's clues

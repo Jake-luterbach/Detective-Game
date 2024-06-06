@@ -20,24 +20,38 @@ Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons R
     "Patient Records": {"Description": "Files on patients who were part of \
         experimental treatments, many of whom are among the missing.",
                 "Location": [1,3,0],
-                "Clues" : ""},
+                "Clues" : "Most of the patient is missing since the treatments, \
+                    seems like there is quite similiar to the missing events \
+                    from the past and now"},
     "Photo": {"Description": "An old photograph showing John Mercer and \
         Dr.Lucas Graham together, suggesting a past connection.",
-                "Location": [0,0,0]},
+                "Location": [0,0,0],
+                "Clues" : "So John Mercer and Dr.Graham have known each other from \
+                    a long time ago. Maybe, Dr.Graham will know something about \
+                    the past events "},
     "Historical Manuscript": {"Description": "An ancient manuscript detailing\
         the town’s history, including references to a curse and maybe \
         the formation of a secret group.",
-                "Location": [1,3,1]},
+                "Location": [1,3,1],
+                "Clues" : "Acording to this, there may be a secret society or \
+                    organization in the past. A long time ago, the citizen often kill \
+                    some people to escape the curse."},
     "Underground Tunnel Map": {"Description": "A detailed map of the hidden tunnels\
         beneath the town, with marked locations of interest.",
-                "Location": [1,3,1]},
+                "Location": [1,3,1],
+                "Clues" : "There is also the underground tunnels in this town. \
+                    Does it related to the disapperances that we explore?"},
     "Ritual Artifacts": {"Description": "Strange artifacts, including ritualistic items\
         and symbols linked to the secret group.",
-                "Location": [1,1,1]},
+                "Location": [1,1,1],
+                "Clues" : "This is might be the symbols of the secret society. \
+                    So there is actually the secret society that lasts \
+                    from the past to now."},
     "Mercer's Final Notes": {"Description": "Final notes by John Mercer detailing \
         his discovery of the secret group and their plans.\
         Ends abruptly, hinting at his capture or demise.",
-                "Location": [1,1,1]},
+                "Location": [1,1,1],
+                "Clues" : ""},
     "Confession Letter": {"Description": "A letter written by Mayor Evelyn Brooks",
                 "Location": [0,2,0]},
     "Old Article": {"Description": "An article about the similar of disappearances \
@@ -56,6 +70,7 @@ class Evidence(p.Player):
         self.identify = identify
         self.take = take
         self.actions = actions
+
     
     def find_evidence(self):
         self.found_evidence = False
