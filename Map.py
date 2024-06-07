@@ -74,6 +74,3 @@ def readMap(mapFile):
     finally:
         print("Good luck, detective.")
 
-
-writeMap(Ravenswood_Map, "townMap.txt", )
-writeMap(Underground_Tunnels_Map, "undergroundMap.txt")

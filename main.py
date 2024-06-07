@@ -13,14 +13,47 @@ persons case.
 # Imports --------------------------------------------------------------------
 import player as p
 import Map
+
+
+options = ["Move", "Change Floors", "View Map", "Write Map"]
 #-----Functions---------------------------------------------------------------
 def moveMenu():
-    p.playerObject.movement()
+    moveChoice=input("Choose the direction you want to go: ").capitalize()
+    p.playerObject.movement(moveChoice)
     print("You are in " + Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX])
 
 
-Map.readMap("townMap.txt")
-Map.readMap("undergroundMap.txt")
+def moveFloors():
+    p.playerObject.changeFloor()
+    print("You are now underground.")
 
-moveMenu()
+
+def playerChoice():
+    for x in options:
+        print(f"*{x}")
+    choice = input("Choose what you want to do: ").capitalize()
+    return choice
+    
+
+def menu():
+    print("Here are your options.")
+    option = playerChoice()
+    if option == "Move":
+        moveMenu()
+    elif option == "Change Floors":
+        moveFloors()
+    elif option == "Write Map":
+        Map.writeMap(Map.Ravenswood_Map, "townMap.txt", )
+        #writeMap(Underground_Tunnels_Map, "undergroundMap.txt")
+    elif option == "View Map":
+        Map.readMap("townMap.txt")
+
+
+#Map.readMap("undergroundMap.txt")
+
+def main():
+    menu()
+
+
 #----Main---------------------------------------------------------------------
+main()

@@ -38,4 +38,6 @@
     *Refined map functions (read and write) for multiple maps - John
     *Updated all item locations - John
     *Add limit to the movement - John, Lee, Jake
-    *Updated evidence's clues
+    *Updated evidence's clues - Jake
+    *Began working on taking evidence in its own function - Jake
+    *Began testing menu in main to put player movement, map functions all together - John

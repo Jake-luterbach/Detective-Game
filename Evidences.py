@@ -88,3 +88,10 @@ class Evidence(p.Player):
                         print("You left the item")
                 except:
                     print("Invalid input")
+
+
+    #def Take_evidence(self):
+        #AREA_INVENTORY = []
+        #for EVIDENCE in AREA_INVENTORY:
+        #Playerloc = [p.playerObject.locX, p.playerObject.locY, p.playerObject.locZ]
+        #if Playerloc == 

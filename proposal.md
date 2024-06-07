@@ -24,6 +24,7 @@ Lee, John, Jake
 *Images(if possible)
 *Multiple Dialogue options for each encounter
 *Clues can be turned on and off at the start
+*Certain important information in dialogue in bolded font for significance
 
 ## Similar Programs:
 Oregon Trail

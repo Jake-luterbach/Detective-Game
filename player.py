@@ -4,14 +4,14 @@
 # Imports --------------------------------------------------------------------
 # Functions ------------------------------------------------------------------
 class Player:
-    def __init__(self, locX, locY, locZ, choice):
+    def __init__(self, locY, locX, locZ):
         self.locX = locX
         self.locY = locY
         self.locZ = locZ
-        self.choice = choice
 
     
-    def movement(self):
+    def movement(self, choice):
+        self.choice = choice
         if self.choice == "W" and self.locY > 0:
             self.locY -= 1
         elif self.choice == "S" and self.locY < 1:
@@ -32,4 +32,4 @@ class Player:
             self.locZ -= 1
 
 
-playerObject = Player(1, 2, 0, choice=input("Choose the direction you want to go: ").capitalize()))
+playerObject = Player(1, 2, 0)

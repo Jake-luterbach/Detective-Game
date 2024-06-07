@@ -25,6 +25,21 @@ class NPC:
     
     def NPC_Clues(self):
         active = True
+        Question = input("Question " + self.name + " (1 or 2)")
         clues = active
         if clues == active:
-            print("Test")
+            if self.name == "Mayor Evelyn Brooks":
+                print("1) Ask about where Mercer is?")
+                print("2) ask about the confession letter")
+                if Question == 1:
+                    print("I'm not sure where Mr.Mercer is"+
+                          "have you tried looking at his cottage?")
+                if Question == 2:
+                    print("oh uhh, it's nothing")
+            elif self.name == "Dr.Lucas Graham":
+                print("1) ask about what happened to mercer")
+                print("2) ask about ")
+                if Question == 1:
+                    print("2")
+                if Question == 2:
+                    print("1")
