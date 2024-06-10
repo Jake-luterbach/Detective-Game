@@ -58,7 +58,7 @@ def writeMap(map, mapFile):
     except:
         print("An error occurred when writing the file.")
     else:
-        print("This is a map.")
+        print("You are given a map.")
     finally:
         print("Good luck, detective.")
 
@@ -70,7 +70,7 @@ def readMap(mapFile):
     except:
         print("An error occurred when reading the file.")
     else:
-        print("This is a map.")
+        print("This is a nice map.")
     finally:
-        print("Good luck, detective.")
+        print("Continue forward, detective.")
 

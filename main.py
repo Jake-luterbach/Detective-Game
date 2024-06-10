@@ -13,6 +13,7 @@ persons case.
 # Imports --------------------------------------------------------------------
 import player as p
 import Map
+import NPCs
 
 
 options = ["Move", "Change Floors", "View Map", "Write Map"]
@@ -35,23 +36,31 @@ def playerChoice():
     return choice
     
 
+def npc():
+    if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == NPCs.mayor.loc:
+        print("There is an NPC!")
+        print("\n")
+        NPCs.mayor.NPC_Dialogue()
+        NPCs.mayor.NPC_Clues()
+
+
 def menu():
     print("Here are your options.")
     option = playerChoice()
+    npc()
     if option == "Move":
         moveMenu()
-    elif option == "Change Floors":
-        moveFloors()
-    elif option == "Write Map":
-        Map.writeMap(Map.Ravenswood_Map, "townMap.txt", )
-        #writeMap(Underground_Tunnels_Map, "undergroundMap.txt")
+    #elif option == "Change Floors":
+        #moveFloors()
     elif option == "View Map":
         Map.readMap("townMap.txt")
 
-
+#writeMap(Underground_Tunnels_Map, "undergroundMap.txt")
 #Map.readMap("undergroundMap.txt")
 
 def main():
+    # Player starts with town map
+    Map.writeMap(Map.Ravenswood_Map, "townMap.txt", )
     menu()
 
 

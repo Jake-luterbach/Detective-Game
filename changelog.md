@@ -41,3 +41,5 @@
     *Updated evidence's clues - Jake
     *Began working on taking evidence in its own function - Jake
     *Began testing menu in main to put player movement, map functions all together - John
+    *Updated all clues - Lee
+    *Added characters dialogue - All

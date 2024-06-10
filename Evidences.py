@@ -6,7 +6,6 @@ import player as p
 # Functions ------------------------------------------------------------------
 Evidences = []
 
-
 Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons Reports,\
             with details of the victims. One stands out to you: John Mercer.",
                 "Location": [0,1,0],
@@ -51,16 +50,31 @@ Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons R
         his discovery of the secret group and their plans.\
         Ends abruptly, hinting at his capture or demise.",
                 "Location": [1,1,1],
-                "Clues" : ""},
+                "Clues" : "Mercer details his discovery of the secret society known as \
+                    the Keepers of the Shadow. He names several key members,\
+                    including Henry Blackwood and Dr. Lucas Graham. Mercer connects \
+                    recent and past disappearances in Ravenswood to \
+                    the Keepers’ rituals. Mercer warns about an imminent ritual that \
+                    the Keepers are planning. They worship the unknown god, \
+                    they believe it can give them power to control the world. \
+                    To satisfy their god, each 15 years they will sacrificed \
+                    peoples to gain the God’s attentions."},
     "Confession Letter": {"Description": "A letter written by Mayor Evelyn Brooks",
-                "Location": [0,2,0]},
+                "Location": [0,2,0],
+                "Clues" : "She has involvement with the secret group,\
+                    and her misguided attempts to protect the town. \
+                    The smoking gun that reveals the mastermind behind \
+                    the disappearances."},
     "Old Article": {"Description": "An article about the similar of disappearances \
               15 years ago with one of the victims is Emily",
-                "Location": [0,3,0]},
+                "Location": [0,3,0],
+                "Clues" : "Now we have to go to Emily's home. We should use a map \
+                    to find it"},
     "Lighthouse Ledger": {"Description": "A ledger containing records of \
               the secret group’s meetings and rituals,\
                with detailed accounts of their actions and plans.",
-                "Location": [1,0,0],}
+                "Location": [1,0,0],
+                "Clues" : "Dr.Graham, Henry, and ... even Mayor Brooks!!!"}
 }
 
 
@@ -94,4 +108,4 @@ class Evidence(p.Player):
         #AREA_INVENTORY = []
         #for EVIDENCE in AREA_INVENTORY:
         #Playerloc = [p.playerObject.locX, p.playerObject.locY, p.playerObject.locZ]
-        #if Playerloc == 
+        #if playerloc == 
