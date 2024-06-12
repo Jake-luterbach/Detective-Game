@@ -5,8 +5,8 @@
 # Functions ------------------------------------------------------------------
 class Player:
     def __init__(self, locY, locX, locZ):
-        self.locX = locX
         self.locY = locY
+        self.locX = locX
         self.locZ = locZ
 
     
@@ -22,7 +22,7 @@ class Player:
             self.locX += 1
         else:
             print("You can't go there detective, you have a job to do!")
-            return True
+        return True
             
 
     def changeFloor(self):

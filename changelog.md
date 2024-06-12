@@ -43,3 +43,9 @@
     *Began testing menu in main to put player movement, map functions all together - John
     *Updated all clues - Lee
     *Added characters dialogue - All
+    *Fixed evidences location - John
+    *Add viewing inventory - Lee
+    *Add winning conditions - Lee
+    *Fixed adding evidences - John
+    *Added changing floor - John
+    *Add print underground map - John
