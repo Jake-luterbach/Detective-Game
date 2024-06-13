@@ -39,6 +39,9 @@
     *Updated all item locations - John
     *Add limit to the movement - John, Lee, Jake
     *Updated evidence's clues - Jake
+
+    
+## Version 3.0
     *Began working on taking evidence in its own function - Jake
     *Began testing menu in main to put player movement, map functions all together - John
     *Updated all clues - Lee
@@ -49,3 +52,10 @@
     *Fixed adding evidences - John
     *Added changing floor - John
     *Add print underground map - John
+
+    
+## Version 4.0
+    *fixed some Grammar issues - Jake
+    *Reworded some text to make it clearer - Jake
+    *Fixed bugs that caused game to crash during user input exceptions - John
+    *Updated winning conditions

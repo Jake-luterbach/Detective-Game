@@ -73,4 +73,3 @@ def readMap(mapFile):
         print("This is a nice map.")
     finally:
         print("Continue forward, detective.")
-

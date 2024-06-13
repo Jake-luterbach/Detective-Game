@@ -49,9 +49,9 @@ def moveMenu():
         print("You are in " +\
               Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX])
         print(Map.Underground_Tunnels_Rooms[Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
-    if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == \
-    "Blackwood Manor":
-        moveFloors()
+   # if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == \
+    #"Blackwood Manor":
+      #  moveFloors()
 
 
 def playerChoice():

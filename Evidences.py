@@ -15,8 +15,7 @@ Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons R
 Mercer detailing his investigation into a similar disappearance 15 years ago.",
                 "Location": [0,3,0],
                 "Clues" : "According to Mercer's diary, the disappearance events \
-used to happen many times with the period of 15 years. Now,the only \
-victims' family that we can contact is Emily's parents."},
+used to happen many times with the period of 15 years."},
     "Patient Records": {"Description": "Files on patients who were part of \
 experimental treatments, many of whom are among the missing.",
                 "Location": [1,3,0],
@@ -52,7 +51,7 @@ capture or demise.",
 the Keepers of the Shadow. He names several key members, including Henry Blackwood and \
 Dr. Lucas Graham. Mercer connects recent and past disappearances in Ravenswood to the \
 Keepers’ rituals. Mercer warns about an imminent ritual that the Keepers are planning. \
-They worship the unknown god, they believe it can give them power to control the world. \
+They worship the unknown god, they believe it can give them power to control the world.\
 To satisfy their god, each 15 years they will sacrifice people to gain the God’s \
 attention."},
     "Confession Letter": {"Description": "A letter written by Mayor Evelyn Brooks",
@@ -66,35 +65,40 @@ mastermind behind the disappearances."},
                 "Clues" : "Now we have to go to Emily's home. We should use a map \
 to find it"},
     "Lighthouse Ledger": {"Description": "A ledger containing records of \
-the secret group’s meetings and rituals, with detailed accounts of their actions and \
-plans.", "Location": [1,0,0], 
+the meetings and rituals", "Location": [1,0,0], 
                 "Clues" : "Dr.Graham, Henry, and ... even Mayor Brooks!!!"}
 }
 
 
 def find_evidence():
-    #self.found_evidence = False
     print()
     print("You are inspecting the area...")
     for item in Items:
         if [p.playerObject.locY, p.playerObject.locX, p.playerObject.locZ] == \
         Items[item]["Location"]:
-            print("Oh? There is an item:")
-            print(Items[item]["Description"])
-            actions = input("Do you want to take the item? (Yes or No): ")
-            try:
-                if actions.capitalize() == "Yes":
-                    #print("You found something")
-                    Evidences.append(item)
-                    print()
-                    print("You successfully stored the item.")
-                    print()
-                    print("Clarke: ")
-                    NPCs.Clarke(item)
-                    print()
-                if actions.capitalize() == "No":
-                    print("You left the item.")
-            except:
-                print("Invalid input.")
+            if item == "Confession Letter":
+                for item1 in Evidences:
+                    if item1 == "Lighthouse Ledger":
+                        print(Items[item1]["Description"])
+            else:
+                print("Oh? There is an item:")
+                print(Items[item]["Description"])
+                actions = input("Do you want to take the item? (Yes or No): ")
+                try:
+                    if actions.capitalize() == "Yes":
+                        #print("You found something")
+                        Evidences.append(item)
+                        print()
+                        print("You successfully stored the item.")
+                        print()
+                        print("Clarke: ")
+                        NPCs.Clarke(item)
+                        print()
+                    if actions.capitalize() == "No":
+                        print("You left the item.")
+                except:
+                    print("Invalid input.")
+                else:
+                    print("You found nothing")
     else:
-        print("There is nothing here")
+        print("There is nothing else here")

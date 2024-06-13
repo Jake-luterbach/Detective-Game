@@ -6,7 +6,6 @@ import Map
 import Evidences as e
 import win
 
-
 end = False
 
 # Functions ------------------------------------------------------------------
@@ -51,15 +50,17 @@ for her father’s disappearance")
             for item in e.Evidences:
                 if self.evi == item:
                     print("(2) " + self.q2)
-            Question = int(input("You choose (1 or 2):"))
-            if Question == 1:
-                print("(1) " + self.a1)
-            if Question == 2:
-                print("(2) " + self.a2)
-                if self.name == "Mayor Evelyn Brooks":
-                    win.win_condition()
-                    end = True
-        
+            try:
+                Question = int(input("You choose (1 or 2):"))
+                if Question == 1:
+                    print("(1) " + self.a1)
+                if Question == 2:
+                    print("(2) " + self.a2)
+                    if self.name == "Mayor Evelyn Brooks":
+                        win.win_condition()
+            except:
+                print("There was an error. Please try again.")
+    
 
 mayor = NPC("Mayor Evelyn Brooks", True, "Ask about where Mercer is?",
             "Can you ask everyone to meet at the town hall? \
