@@ -95,8 +95,8 @@ note detailing when he will come back.",
 
 emily = NPC("Emily's Family Home", True, "Ask about Emily?",
            "Do you know where she disappeared to?",
-           "She's always been a kind and good girl. She was gonna have a better future \
-if she didn't help that guy find a truth that didn't exist.",
+           "She's always been a kind and good girl. She was gonna have a bright future \
+if she didn't help that guy try and find something that didn't exist.",
            "We don't know. But I found her bracelet at Old Asylum. If you want to find \
 anything more, you should go there. But there is not anything \
 over there. My husband already went many times", [0,4,0], "Old Article")

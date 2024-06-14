@@ -63,7 +63,7 @@ def writeMap(map, mapFile):
         print("Good luck, detective.")
 
 
-def readMap(mapFile):
+def readMap(mapFile):    
     try:
         with open(mapFile, 'r') as file:
             print(file.read())

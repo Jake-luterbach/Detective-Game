@@ -58,4 +58,6 @@
     *fixed some Grammar issues - Jake
     *Reworded some text to make it clearer - Jake
     *Fixed bugs that caused game to crash during user input exceptions - John
-    *Updated winning conditions
+    *Updated winning conditions - Lee
+    *Completed winning conditions - Lee
+    *Worked on underground functions - John

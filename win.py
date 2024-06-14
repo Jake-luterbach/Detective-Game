@@ -32,8 +32,18 @@ party where we have a discussion about wine.")
 You guys are all the members of the secret group called 'The Keepers of Shadow'.")
                 clues_prove()
                 if answer == "Mercer's Final Notes":
-                    
-            NPCs.end = True
+                    print("Alex: This note has show that both of you guys are the \
+member of that. According to Mercer, the members of that group worship the unknown god,\
+and believe it can give them power to control the world.To satisfy their god, each \
+15 years they will sacrifice people to gain the God’s attention.")
+                    print("Mayor: So how it is related to me. I didn't know they are\
+the members of that group.")
+                    print("Alex: No. Mayor, you know it. This is the evidence show that you cooperated with them.")
+                    clues_prove()
+                    if answer == "Confession Letter":
+                        print("Alex: Have nothing to say.")
+                        print("Thank for playing the game. That's all for now")
+                        NPCs.end = True
         else:
             print("Sorry, but the culprit is still on the loose. You should play again \
 and organize your thinking this time, detective")

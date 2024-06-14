@@ -17,8 +17,10 @@ import NPCs
 import Evidences as e
 
 
-options = ["Move", "Map", "Talk", "Inspect", "Inventory"]
+options = ["Move", "Map", "Talk", "Inspect", "Inventory", "Quit"]
 #-----Functions---------------------------------------------------------------
+print("Detective Game")
+
 print("In the small, seeming idyllic town of Ravenswood, a community has been shaken by\
  a series of mysterious disappearances. The local police are baffled and unable to find\
  any leads or connections between the victims. A detective Alex Harper, a seasoned\
@@ -29,7 +31,7 @@ print("In the small, seeming idyllic town of Ravenswood, a community has been sh
 
 def moveFloors():
     print("You realize that there is a secret entrance where you can change floors.")
-    upOrDown = input("Do you want to try changing floors? (Yes or No)").capitalize()
+    upOrDown = input("Do you want to try changing floors? (Yes or No) ").capitalize()
     if upOrDown == "Yes":
         p.playerObject.changeFloor()
         print("You have now changed floors.")
@@ -39,19 +41,20 @@ def moveFloors():
 
 def moveMenu():
     moveChoice=input("Choose the direction you want to go (w,a,s,d): ").capitalize()
-    p.playerObject.movement(moveChoice)
     print()
     if p.playerObject.locZ == 0:
+        p.playerObject.movement(moveChoice)
         print("You are in " + \
               Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX])
         print(Map.Ravenswood_Rooms[Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
     elif p.playerObject.locZ == 1:
+        p.playerObject.undergroundMovement(moveChoice)
         print("You are in " +\
               Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX])
         print(Map.Underground_Tunnels_Rooms[Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
-   # if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == \
-    #"Blackwood Manor":
-      #  moveFloors()
+    if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == \
+    "Blackwood Manor" or "Cemetery" or "Old Asylum":
+        moveFloors()
 
 
 def playerChoice():
@@ -92,8 +95,6 @@ def menu():
     option = playerChoice()
     if option == "Move":
         moveMenu()
-    #elif option == "Change Floors":
-        #moveFloors()
     elif option == "Map":
         Map.writeMap(Map.Ravenswood_Map, "townMap.txt")
         Map.readMap("townMap.txt")
@@ -110,6 +111,8 @@ def menu():
         e.find_evidence()
     elif option == "Inventory":
         inventory()
+    elif option == "Quit":
+        NPCs.end = True
         
 
 #----Main---------------------------------------------------------------------
