@@ -18,6 +18,8 @@ import Evidences as e
 
 
 options = ["Move", "Map", "Talk", "Inspect", "Inventory", "Quit"]
+
+requirement = False
 #-----Functions---------------------------------------------------------------
 print("Detective Game")
 
@@ -39,7 +41,14 @@ def moveFloors():
         print("You decide to not do anything for now.")
 
 
+def change_floors_re():
+    global requirement
+    if (p.playerObject.locZ == 0 and (Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == Map.Ravenswood_Map[1][1] or Map.Ravenswood_Map[1][3] or Map.Ravenswood_Map[1][4])) or (p.playerObject.locZ == 1 and (Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX] == Map.Underground_Tunnels_Map[1][0] or Map.Underground_Tunnels_Map[1][2] or Map.Underground_Tunnels_Map[0][3])):
+        requirement = True
+
+
 def moveMenu():
+    """Menu for calling moving functions and print player location"""
     moveChoice=input("Choose the direction you want to go (w,a,s,d): ").capitalize()
     print()
     if p.playerObject.locZ == 0:
@@ -52,8 +61,7 @@ def moveMenu():
         print("You are in " +\
               Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX])
         print(Map.Underground_Tunnels_Rooms[Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
-    if Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == \
-    "Blackwood Manor" or "Cemetery" or "Old Asylum":
+    if requirement:
         moveFloors()
 
 
@@ -117,4 +125,5 @@ def menu():
 
 #----Main---------------------------------------------------------------------
 while True and not NPCs.end:
+    change_floors_re()
     menu()

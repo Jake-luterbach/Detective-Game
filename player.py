@@ -12,6 +12,7 @@ class Player:
 
     
     def movement(self, choice):
+        """Moves the player around the town map if within boundaries"""
         self.choice = choice
         if self.choice == "W" and self.locY > 0:
             self.locY -= 1
@@ -27,6 +28,7 @@ class Player:
 
 
     def undergroundMovement(self, choice):
+        """Moves the player around the underground map if within boundaries"""
         self.choice = choice
         if self.choice == "W" and self.locY > 0:
             self.locY -= 1
@@ -42,14 +44,19 @@ class Player:
         
 
     def changeFloor(self):
+        """Changes floors for the player"""
         if [self.locY,self.locX,self.locZ] == [1,4,0]:
-            [self.locY,self.locX,self.locZ] == [1,3,1]
+            [self.locY,self.locX,self.locZ] = [1,3,1]
         elif [self.locY,self.locX,self.locZ] == [1,3,1]:
-            [self.locY,self.locX,self.locZ] == [1,4,0]
+            [self.locY,self.locX,self.locZ] = [1,4,0]
         elif [self.locY,self.locX,self.locZ] == [1,1,0]:
-            [self.locY,self.locX,self.locZ] == [1,0,1]
+            [self.locY,self.locX,self.locZ] = [1,0,1]
+        elif [self.locY,self.locX,self.locZ] == [1,0,1]:
+            [self.locY,self.locX,self.locZ] = [1,1,0]
         elif [self.locY,self.locX,self.locZ] == [1,3,0]:
-            [self.locY,self.locX,self.locZ] == [1,2,1]
+            [self.locY,self.locX,self.locZ] = [1,2,1]
+        elif [self.locY,self.locX,self.locZ] == [1,2,1]:
+            [self.locY,self.locX,self.locZ] = [1,3,0]
 
 
 playerObject = Player(1, 2, 0)

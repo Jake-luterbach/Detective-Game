@@ -5,7 +5,7 @@
 import player as p
 import NPCs
 # Functions ------------------------------------------------------------------
-Evidences = []
+Evidences = ["Underground Tunnel Map"]
 
 Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons Reports,\
             with details of the victims. One stands out to you: John Mercer.",
@@ -71,6 +71,10 @@ the meetings and rituals", "Location": [1,0,0],
 
 
 def find_evidence():
+    """
+    Function to inspect areas around the map and retrieve items if 
+    they are available.
+    """
     print()
     print("You are inspecting the area...")
     for item in Items:
@@ -86,7 +90,6 @@ def find_evidence():
                 actions = input("Do you want to take the item? (Yes or No): ")
                 try:
                     if actions.capitalize() == "Yes":
-                        #print("You found something")
                         Evidences.append(item)
                         print()
                         print("You successfully stored the item.")

@@ -9,7 +9,7 @@ import player as p
 # Functions ------------------------------------------------------------------
 def clues_prove():
     global answer
-    print("Please choose one of the evidences in your inventory to prove your thinking")
+    print("Please choose one of the evidences you collected to prove your thinking")
     for item in e.Evidences:
         print(item + e.Items[item]["CLues"])
     answer = input("Alex: ")
@@ -38,10 +38,11 @@ and believe it can give them power to control the world.To satisfy their god, ea
 15 years they will sacrifice people to gain the God’s attention.")
                     print("Mayor: So how it is related to me. I didn't know they are\
 the members of that group.")
-                    print("Alex: No. Mayor, you know it. This is the evidence show that you cooperated with them.")
+                    print("Alex: No. Mayor, you know it. This is the evidence show that\
+                    you cooperated with them.")
                     clues_prove()
                     if answer == "Confession Letter":
-                        print("Alex: Have nothing to say.")
+                        print("Alex: I Have nothing to say.")
                         print("Thank for playing the game. That's all for now")
                         NPCs.end = True
         else:

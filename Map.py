@@ -12,7 +12,7 @@ Ravenswood_Rooms = {
         "made from wood and is very eerie"}, 
     "Blackwood Manor" : {"Description" : "Henry’s home, \
 which contains ancient tomes and artifacts"},
-    "The Lighthouse" : {"Description" : "The final confrontation site, \
+    "The Lighthouse" : {"Description" : "a ligthouse that hasn't seen use in years, \
 located on the outskirts of Ravenswood"},
     "Cemetery" : {"Description" : "The town's cemetery, often associated with \
 mysterious activities at night"}, 
@@ -40,7 +40,7 @@ secret room of Blackwood Manor"},
 the cemetery."}, 
     "Hidden Chamber" : {"Description" : "Seems like a not yet finished chamber"},
     "Entrance from Old Asylum" : {"Description" : "A hidden door in the basement of \
-the old asylum, cover by debris and old medical equipment"},
+the old asylum, covered by debris and old medical equipment"},
     "Blackwood Manor Secret Room" : {"Description" : "Where Henry stores historical\
 artifacts and documents and does his research without interruption"}}
 

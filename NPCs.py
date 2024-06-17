@@ -24,7 +24,7 @@ class NPC:
     def NPC_Dialogue(self):
         if self.name == "Mayor Evelyn Brooks":
             print("Hey there, I'm Evelyn Brooks the mayor of Ravenswood!\
- Thank you for coming to help us with these disappearance events. ")
+ Thank you for coming to help us with these disappearances. ")
         if self.name == "Dr. Lucas Graham":
             print("Hi detective, I'm Dr. Graham the psychologist")
         if self.name == "Emily's Family Home":
@@ -70,10 +70,10 @@ I think I know who stands behind these disappearances.",
             "Confession Letter")
 
 doctor = NPC("Dr. Lucas Graham", True, "Ask about the events?",
-            "Ask about the photo of him and John Mercer together?",
+            "Ask about the photo of him and John Mercer together",
             "Oh, I would say that there were some similiar events like these from a \
 long time ago. It's like a curse",
-            "Well, him and I discovered about the disappearances 15 years ago. \
+            "Well, him and I investigated the disappearances 15 years ago. \
 If you already checked his cottage, you may see the article about \
 15 years ago. Mercer and I didn't find anything about it even with the \
 help of Emily. It was my shame to lead to what happened to Emily.", [0,0,0], "Photo")

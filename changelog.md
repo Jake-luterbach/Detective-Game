@@ -61,3 +61,5 @@
     *Updated winning conditions - Lee
     *Completed winning conditions - Lee
     *Worked on underground functions - John
+    *Began adding function headers - John
+    *Continued working on underground area of game
