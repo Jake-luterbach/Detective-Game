@@ -102,7 +102,26 @@ def find_evidence():
                 for item1 in Evidences:
                     # Then, reprint the desc. for lighthouse ledger
                     if item1 == "Lighthouse Ledger":
-                        print(Items[item1]["Description"])
+                        print(Items["Confession Letter"]\
+                              ["Description"])
+                        actions = input("Do you want to\
+                        take the item?: ")
+                        try:
+                            if actions.capitalize() == "Yes":
+                            # Add item to inventory if player chooses to 
+                             Evidences.append(item)
+                             print()
+                             print("You successfully stored the item.")
+                             print()
+                             print("Clarke: ")
+                             # Print the clue that our assistant "Clarke"
+                             # gathers from the collected item
+                             NPCs.Clarke(item)
+                             print()
+                             if actions.capitalize() == "No":
+                                 print("You left the item.")
+                        except:
+                            print("Invalid input.")
             else:
                 print("Oh? There is an item:")
                 # Print available item's description
