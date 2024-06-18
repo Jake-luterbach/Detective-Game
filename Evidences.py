@@ -5,7 +5,7 @@
 import player as p
 import NPCs
 # Functions ------------------------------------------------------------------
-Evidences = ["Underground Tunnel Map"]
+Evidences = []
 
 Items = {"Missing Person Reports": {"Description": "A stack of Missing Persons Reports,\
             with details of the victims. One stands out to you: John Mercer.",

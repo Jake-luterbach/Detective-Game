@@ -32,19 +32,35 @@ print("In the small, seeming idyllic town of Ravenswood, a community has been sh
 
 
 def moveFloors():
+    print()
     print("You realize that there is a secret entrance where you can change floors.")
     upOrDown = input("Do you want to try changing floors? (Yes or No) ").capitalize()
     if upOrDown == "Yes":
         p.playerObject.changeFloor()
         print("You have now changed floors.")
-    else:
+        print()
+        if p.playerObject.locZ == 0:
+            print("You are in " + \
+                  Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX])
+            print(Map.Ravenswood_Rooms[Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
+        elif p.playerObject.locZ == 1:
+            print("You are in " +\
+                  Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX])
+            print(Map.Underground_Tunnels_Rooms[Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
+
+    elif upOrDown == "No":
         print("You decide to not do anything for now.")
+    else:
+        print("Invalid Input")
 
 
-def change_floors_re():
+def change_floors_re(a, b, c):
     global requirement
-    if (p.playerObject.locZ == 0 and (Map.Ravenswood_Map[p.playerObject.locY][p.playerObject.locX] == Map.Ravenswood_Map[1][1] or Map.Ravenswood_Map[1][3] or Map.Ravenswood_Map[1][4])) or (p.playerObject.locZ == 1 and (Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX] == Map.Underground_Tunnels_Map[1][0] or Map.Underground_Tunnels_Map[1][2] or Map.Underground_Tunnels_Map[0][3])):
+    if [p.playerObject.locY, p.playerObject.locX, p.playerObject.locZ] == [a, b, c]:
         requirement = True
+        if requirement:
+            moveFloors()
+        requirement = False
 
 
 def moveMenu():
@@ -61,8 +77,6 @@ def moveMenu():
         print("You are in " +\
               Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX])
         print(Map.Underground_Tunnels_Rooms[Map.Underground_Tunnels_Map[p.playerObject.locY][p.playerObject.locX]]["Description"])
-    if requirement:
-        moveFloors()
 
 
 def playerChoice():
@@ -125,5 +139,10 @@ def menu():
 
 #----Main---------------------------------------------------------------------
 while True and not NPCs.end:
-    change_floors_re()
+    change_floors_re(1, 3, 0)
+    change_floors_re(1, 4, 0)
+    change_floors_re(1, 1, 0)
+    change_floors_re(1, 0, 1)
+    change_floors_re(1, 2, 1)
+    change_floors_re(0, 3, 1)
     menu()
